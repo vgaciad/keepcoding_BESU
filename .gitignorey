@@ -1,0 +1,32 @@
+# Directorios de dependencias
+**/node_modules/
+
+# Directorios de datos de Besu (claves, datos de la cadena)
+**/data/
+**/networkFiles/keys/ # Claves privadas generadas
+
+# Salidas de compilación y caché
+**/artifacts/
+**/cache/
+
+# Archivos de log
+*.log
+
+# Variables de entorno local
+.env
+.env.*
+
+# Directorios de salida del Quickstart que NO necesitas en Git (pueden ser grandes o específicos del entorno)
+# Ajusta esta lista si quieres incluir algo de aquí
+chainlens/
+dapps/          # Incluir si contiene código fuente, excluir si son binarios/data
+filebeat/
+grafana/
+loki/
+metricbeat/
+promtail/
+splunk/
+static/         # Incluir si es contenido web, excluir si es data/binario
+
+# Archivos de Docker que pueden ser generados o locales
+docker-compose.override.yml
